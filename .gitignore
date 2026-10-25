@@ -1,0 +1,26 @@
+# Python environments and bytecode
+.venv/
+.venv*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Jupyter runtime files
+.ipynb_checkpoints/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files and logs
+*.log
+*.tmp
+nasa_news.txt

@@ -1,0 +1,10 @@
+ipykernel
+notebook
+matplotlib
+plotly
+numpy
+pandas
+
+spacy
+spacy[transformers]
+spacy-transformers
