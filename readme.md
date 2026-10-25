@@ -9,8 +9,20 @@ over a lunar surface image in `geo_pars.ipynb`.
 Keep these files in the same project folder:
 
 - `geo_pars.ipynb` — notebook and mapping code.
-- `nasa_news.txt` — UTF-8 text containing one article per section. Put a line
-  containing only `#` between articles.
+- `nasa_news.txt` — UTF-8 text containing one article per entry. Each entry is
+  a single line of text, and entries are separated by a line containing only
+  `#`.
+
+  Example structure:
+
+  ```text
+  VIPER rover is scheduled to land near the Nobile Crater at the South Pole.
+  #
+  Artemis III scouts targets near Shackleton and Mare Serenitatis.
+  #
+  Blue Ghost left Earth on 15 January, after being launched by US firm Firefly Aerospace with the intention of exploring the Sea of Crises, a huge basin visible from Earth.
+  #
+  ```
 - `moon_geolocation.csv` — USGS planetary nomenclature export for the Moon.
   The notebook reads feature names, feature types, center latitudes, and center
   longitudes from this file. Download the lunar gazetteer from the
