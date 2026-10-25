@@ -26,6 +26,15 @@ The Compose configuration mounts the project folder into `/workspace`, so
 these files remain on the host and the notebook can read them by their
 project-relative filenames.
 
+## Coordinate system
+
+The notebook plots the USGS gazetteer's center latitude and longitude as
+selenographic coordinates: longitude is the horizontal axis and latitude is
+the vertical axis. The lunar surface image is displayed as an equirectangular
+map, with longitude mapped to image x and latitude to image y. No coordinate
+conversion is performed, so the map assumes the gazetteer and image use
+matching coordinate conventions.
+
 ## Python requirements
 
 The Docker image uses Python 3.13 and installs the packages listed in
